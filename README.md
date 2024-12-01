@@ -2,6 +2,7 @@
 
 The code provided in this repository contains the solutions to the Part-of-Speech Tagging with Structured Perceptrons PA for COSI 114b - Fundamentals of Natural Language Processing II. 
 
+
 ## Installation and Execution 
 
 Get the files from GitHub and in your terminal/console move into the project folder. Run the file with the solutions with the following line: 
@@ -46,5 +47,6 @@ You can assign each sentence a ``` sentence_id ``` however you want, as long as 
     * ``` results[sentence_id]['correct'] ``` = correct sequence of tags 
     * ``` results[sentence_id]['predicted'] ``` = predicted sequence of tags
 
-* ``` evaluate(self, results) ``` - Given the result of ``` test ```, computes precision, recall, and F1 score for each class, as well as the overall accuracy, and prints them in a readable format. 
+* ``` evaluate(self, results) ``` - This function should return the overall accuracy (number of words correctly tagged / total number of words). You don't have to calculate precision, recall, or F1 score. You should be able to get an accuracy of about 85% on the development set. 
 
+Hint: It took about **9 minutes** to train and test the model on the full dataset. Your milage may vary, depending on your computer. 
